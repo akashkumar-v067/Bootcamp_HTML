@@ -5,7 +5,7 @@
     <style>
         input[type=text],
         textarea,
-        input[type=file] {
+        input[type=file]{
             color: seashell;
             width: 100%;
             padding: 8px 12px;
@@ -13,6 +13,16 @@
             border: 1.5px solid rgb(3, 11, 58);
             border-radius: 4px;
             box-sizing: border-box;
+            padding: 12px 12px;
+        }
+        button{
+            color: seashell;
+            background-color: rgb(42, 167, 125);;
+            align-content: flex-end;
+            border-radius: 5px;
+            border:0px;
+            box-sizing: border-box;
+            padding: 12px 12px;
         }
 
         select {
@@ -24,6 +34,7 @@
             border: 1px solid rgb(40, 145, 105);
             border-radius: 4px;
             box-sizing: border-box;
+            padding: 12px 12px;
         }
 
         .div-flex {
@@ -33,37 +44,75 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            padding: 12px 12px;
         }
 
         .bug-report {
             color: white;
-            background-color: darkblue;
-            margin: o auto;
+            background-color: rgb(187, 187, 187);
+            margin:0% auto;
             border-radius: 4px;
             border: 1.5px solid rgb(3, 11, 58);
-            box-sizing: 20px border-box;
-        }
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            height: 1cm;
+            size: 20pc;
+            padding: 12px 12px;
 
-        .container {
+        }
+        .sub-report {
+            color: white;
+            background-color: rgb(187, 187, 187);
+            margin:0% auto;
+            border-radius: 4px;
+            border: 1.5px solid rgb(3, 11, 58);
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            height: 1cm;
+            size: 20pc;
+            padding: 12px 12px;
+
+        }
+          .container{
             display: flex;
-
             justify-content: center;
-        }
+            padding: 12px 12px;
+            
+          }
         .form{
             border: 1.5px solid rgb(3, 11, 58);
-            border-radius: 4px;
-            padding: 8px 12px;
+            border-radius: 0px;
+            padding: 12px 12px;
+            
+        }
+        h1{
+            color: rgb(28, 221, 221);
+            display: inline-block;
+            width: 25cm;
+            font: optional;
+            padding: 12px 12px;
+        }
+        a{
+            color: rgb(28, 221, 221);
+            font: optional;
+            align-self: right;
+            padding: 12px 12px;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
+    <a><h1>TO THE NEW</h1></a>
+    <a href="https://www.tothenew.com/">Home</a>
+    <a href="https://www.tothenew.com/contact-us">Quick Help</a>
     
+    <div class="container">
         <div>
-         
-        <div class="bug-report"><h2>Bug Report</h2></div>
+     <div>
+        <h2 class="bug-report">Bug Report</h2>
+    </div>
+        
                 
         <form class="form">
             
@@ -95,14 +144,19 @@
             </select><br>
             <label>Attachments: </label>
             <input type="file" value="file" name="file" /><br>
-            <div>
-                <input type="submit" value="Send" />
-            </div>
+            
         
         
         </form>
+
+        <div align="right" class="sub-report"><button> Send</button></div>
+            
+    
+    
     </div>
     </div>
+
+    
 
 </body>
 
