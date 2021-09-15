@@ -6,82 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-    .header{
-        background-color: rgb(61, 58, 58);
-        
-    }
-    .link{
-        background-color: rgb(24, 23, 23);
-        display: inline-block;
-       
-    }
-    .prdiv{
-        border-left-style:solid;
-        border-right-style:solid;
-        border-width: 2cm;
+html,
+body {
+	width: 100%;
+}
 
-    }
-    .footer{
-        background-color: black;
-        height: 1cm;
-        color: blanchedalmond;
-        
-    }
-    
+:root {
+	--bg-color: rgb(38, 38, 38);
+	--bg-gray-light: rgb(225, 225, 225);
+	--footer-color: rgb(26, 26, 26);
+	--text-color: rgb(183, 183, 183);
+	--text-gray-dark: rgb(148, 148, 148);
+}
+
+body {
+	padding: 0 3rem;
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 5rem;
+}
+
+#header,
+#footer {
+	box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.1);
+	padding: 1rem 0;
+}
+
+#header .page-heading {
+	color: var(--text-color);
+	margin-bottom: 1.25rem;
+}
+
+#header .navbar {
+	width: 100%;
+	background-color: var(--footer-color);
+	padding: 1rem;
+}
+
+#header .navbar .nav-link:not(:last-child) {
+	margin-right: 1rem;
+}
+
+#header .navbar .nav-text {
+	color: var(--text-color);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#main {
+	background-color: white;
+	padding: 1rem 0;
+}
+
+#main .main-img {
+	width: 100%;
+}
+
+#main .main-text-content {
+	background-color: var(--bg-gray-light);
+
+	padding: 0.5rem;
+	margin: 1rem 0;
+
+	border-radius: 4px;
+
+	color: var(--text-gray-dark);
+	text-align: justify;
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+
+#gallery-section {
+	margin-top: 2rem;
+}
+
+#gallery-section .heading {
+	color: var(--text-gray-dark);
+	text-transform: uppercase;
+	margin-bottom: 0.25rem;
+}
+
+#gallery-section .divider {
+	background-color: var(--bg-gray-light);
+	margin-bottom: 1rem;
+}
+
+#gallery-section .gallery {
+	display: flex;
+}
+
+#gallery-section .gallery .img-container {
+	border: 1px solid var(--text-gray-dark);
+	padding: 3px;
+	border-radius: 4px;
+	flex-basis: 25%;
+}
+
+#gallery-section .gallery .img-container:not(:last-child) {
+	margin-right: 8px;
+}
+
+#gallery-section .gallery .img-container img {
+	width: 100%;
+}
+
+#gallery-section .gallery .img-container .caption {
+	background-color: var(--bg-gray-light);
+	color: var(--text-gray-dark);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0.5rem 0;
+}
+
+
+#footer {
+	background-color: var(--footer-color);
+}
+
+#footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer .container p {
+	color: var(--text-color);
+	font-size: 10px;
+}
 
     </style>
 </head>
 <body>
-<div class="prdiv">
-    <div class="header">
-        <h1>To The New</h1>
-        <div class="link">
-            <a href="">TEXT LINK</a>
-            <a href="">TEXT LINK</a>
-            <a href="">TEXT LINK</a>
-            <a href="">TEXT LINK</a>
-        </div>
-    </div>
-    <div class="bimage" >
-        <img src="/home/akash/Desktop/HTML/img/960x360.png" alt="Trulli" width="960" height="360">
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia ullam possimus saepe sed, quibusdam
-            sint, velit enim doloremque unde culpa. Nemo, asperiores eligendi nostrum nam nihil eum! Porro, officia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reprehenderit porro repellat animi nobis
-            tenetur ab sint, consequuntur amet nemo distinctio deleniti doloribus eligendi quos dolor ducimus veritatis
-            temporibus assumenda!</p>
-    </div><br>
-    <div>
-        <legend>Latest from gallery</legend>
-        <img src="/home/akash/Desktop/HTML/img/215x315.gif" alt="Trulli" width="215" height="315">
-        <img src="/home/akash/Desktop/HTML/img/215x315.gif" alt="Trulli" width="215" height="315">
-        <img src="/home/akash/Desktop/HTML/img/215x315.gif" alt="Trulli" width="215" height="315">
-        <img src="/home/akash/Desktop/HTML/img/215x315.gif" alt="Trulli" width="215" height="315">
-    </div>
     
+		
+		<header id="header">
+			<div class="container">
+				
+				<h1 class="page-heading">To the New</h1>
 
+				
+				<nav class="navbar">
+					<a href="#link-1" class="nav-link nav-text" rel="noopener noreferrer">Text Link</a>
+					<a href="#link-2" class="nav-link nav-text" rel="noopener noreferrer">Text Link</a>
+					<a href="#link-3" class="nav-link nav-text" rel="noopener noreferrer">Text Link</a>
+					<a href="#link-4" class="nav-link nav-text" rel="noopener noreferrer">Text Link</a>
+				</nav>
+				
+			</div>
+		</header>
 
-<div class="footer">
-      <footer>
-       <p style="margin:0;display:inline;float:left">Copyright © 2009-2017-All Right Reserved-To The New</p>
-       <p style="margin:0;display:inline;float:right"> Web layout by To The New</p>  
-     </footer>
-</div>
+		
+		<main id="main">
+			<div class="container">
+				
+				<img class="main-img" src="./img/960x360.png" alt="banner image">
+				<p class="main-text-content">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
+					maiores sed. Aliquid eveniet beatae debitis id quis, deleniti
+					voluptatibus porro.
+				</p>
+				<section id="gallery-section">
+					<h4 class="heading">Latest from the gallery</h4>
+					<hr class="divider">
 
+					<div class="gallery">
+						<div class="img-container">
+							<img src="./img/215x315.gif" alt="gallery image 1">
+							<div class="caption">Image caption here</div>
+						</div>
+						<div class="img-container">
+							<img src="./img/215x315.gif" alt="gallery image 2">
+							<div class="caption">Image caption here</div>
+						</div>
 
+						<div class="img-container">
+							<img src="./img/215x315.gif" alt="gallery image 3">
+							<div class="caption">Image caption here</div>
+						</div>
 
+						<div class="img-container">
+							<img src="./img/215x315.gif" alt="gallery image 4">
+							<div class="caption">Image caption here</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 
+		<footer id="footer">
+			<div class="container">
+				<p>Copyright © 2009 - 2017 - All Rights Reserved - To the New</p>
 
-
-
-
-
-
-
-
-</div>
-
+				<p>Web layout by To the New</p>
+			</div>
+		</footer>
 </body>
 </html>
